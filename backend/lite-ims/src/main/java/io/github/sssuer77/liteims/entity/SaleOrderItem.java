@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableLogic;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 import java.math.BigDecimal;
@@ -44,5 +45,6 @@ public class SaleOrderItem {
 
     @Schema(name = "isDeleted", title = "逻辑删除", description = "软删除标记：0-正常，1-已删除", hidden = true)
     @TableLogic
+    @JsonIgnore
     private Integer isDeleted; //逻辑删除：0-正常，1-已删除
 }

@@ -36,4 +36,12 @@ public class Result<T> {
         result.setData(null);
         return result;
     }
+
+    public static <T> Result<T> fail(String message) {
+        Result<T> result = new Result<>();
+        result.setCode(500); // 假设 500 是通用失败码
+        result.setMessage(message);
+        result.setData(null);
+        return result;
+    }
 }

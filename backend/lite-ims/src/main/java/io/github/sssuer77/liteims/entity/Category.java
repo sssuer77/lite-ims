@@ -42,5 +42,6 @@ public class Category {
 
     @Schema(name = "isDeleted", title = "逻辑删除", description = "软删除标记：0=正常，1=已删除", hidden = true)
     @TableLogic
+    @JsonIgnore
     private Integer isDeleted;
 }
