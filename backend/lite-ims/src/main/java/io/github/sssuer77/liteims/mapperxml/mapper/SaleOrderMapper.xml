@@ -1,0 +1,10 @@
+<select id="selectOrderList" resultType="com.example.liteims.vo.SaleOrderVO">
+    SELECT o.*, c.name AS customer_name
+    FROM sale_order o
+    LEFT JOIN customer c ON o.customer_id = c.id
+    WHERE o.is_deleted = 0
+    <if test="orderNo != null and orderNo != ''">
+        AND o.order_no LIKE CONCAT('%', #{orderNo}, '%')
+    </if>
+    ORDER BY o.create_time DESC
+</select>

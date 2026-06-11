@@ -1,6 +1,6 @@
 package io.github.sssuer77.liteims.vo;
 
-import com.atguigu.liteims.entity.SaleOrderItem;
+import io.github.sssuer77.liteims.entity.SaleOrderItem;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;

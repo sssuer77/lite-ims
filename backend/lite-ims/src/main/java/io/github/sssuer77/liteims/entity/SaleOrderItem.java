@@ -47,4 +47,6 @@ public class SaleOrderItem {
     @TableLogic
     @JsonIgnore
     private Integer isDeleted; //逻辑删除：0-正常，1-已删除
+
+    private BigDecimal subtotal;
 }
