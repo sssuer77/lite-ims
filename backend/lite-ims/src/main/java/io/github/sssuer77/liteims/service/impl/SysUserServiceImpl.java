@@ -1,9 +1,9 @@
 package io.github.sssuer77.liteims.service.impl;
 
-import com.atguigu.liteims.dto.SysUserDTO;
-import com.atguigu.liteims.entity.SysUser;
-import com.atguigu.liteims.mapper.SysUserMapper;
-import com.atguigu.liteims.service.SysUserService;
+import io.github.sssuer77.liteims.dto.SysUserDTO;
+import io.github.sssuer77.liteims.entity.SysUser;
+import io.github.sssuer77.liteims.mapper.SysUserMapper;
+import io.github.sssuer77.liteims.service.SysUserService;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;

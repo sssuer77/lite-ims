@@ -1,8 +1,8 @@
 package io.github.sssuer77.liteims.service.impl;
 
-import com.atguigu.liteims.entity.Category;
-import com.atguigu.liteims.mapper.CategoryMapper;
-import com.atguigu.liteims.service.CategoryService;
+import io.github.sssuer77.liteims.entity.Category;
+import io.github.sssuer77.liteims.mapper.CategoryMapper;
+import io.github.sssuer77.liteims.service.CategoryService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 
 import org.springframework.stereotype.Service;

@@ -1,9 +1,9 @@
 package io.github.sssuer77.liteims.service.impl;
 
-import com.atguigu.liteims.entity.Product;
-import com.atguigu.liteims.mapper.ProductMapper;
-import com.atguigu.liteims.service.ProductService;
-import com.atguigu.liteims.vo.ProductVO;
+import io.github.sssuer77.liteims.entity.Product;
+import io.github.sssuer77.liteims.mapper.ProductMapper;
+import io.github.sssuer77.liteims.service.ProductService;
+import io.github.sssuer77.liteims.vo.ProductVO;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

@@ -16,7 +16,12 @@ public interface SaleOrderMapper extends BaseMapper<SaleOrder> {
 
     /**
      * 获取订单总额度
+     *
      * @return
      */
+
+
+    @Select("SELECT IFNULL(SUM(total_amount), 0) FROM sale_order WHERE is_deleted = 0 AND status != 2")
     BigDecimal getTotalSales();
+
 }

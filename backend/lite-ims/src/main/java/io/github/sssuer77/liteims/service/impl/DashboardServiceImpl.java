@@ -1,10 +1,10 @@
 package io.github.sssuer77.liteims.service.impl;
 
-import com.atguigu.liteims.entity.SaleOrder;
-import com.atguigu.liteims.mapper.ProductMapper;
-import com.atguigu.liteims.mapper.SaleOrderMapper;
-import com.atguigu.liteims.service.DashboardService;
-import com.atguigu.liteims.vo.DashboardVO;
+import io.github.sssuer77.liteims.entity.SaleOrder;
+import io.github.sssuer77.liteims.mapper.ProductMapper;
+import io.github.sssuer77.liteims.mapper.SaleOrderMapper;
+import io.github.sssuer77.liteims.service.DashboardService;
+import io.github.sssuer77.liteims.vo.DashboardVO;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 
