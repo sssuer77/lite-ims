@@ -1,5 +1,6 @@
 package io.github.sssuer77.liteims.service;
 
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import io.github.sssuer77.liteims.entity.Product;
 import io.github.sssuer77.liteims.vo.ProductVO;
 import com.baomidou.mybatisplus.core.metadata.IPage;
@@ -10,10 +11,12 @@ public interface ProductService extends IService<Product> {
     /**
      * 分页
      * @param page 页码
-     * @param size 条数
+//     * @param size 条数
      * @param name 商品名称关键词
      * @param categoryId 分类主键
      * @return 分页数据
      */
-    IPage<ProductVO> findPage(Integer page, Integer size, String name, Long categoryId);
+    IPage<ProductVO> getProductList(Page<ProductVO> page, String name, Long categoryId);
+
+//    IPage<ProductVO> findPage(Integer page, Integer size, String name, Long categoryId);
 }

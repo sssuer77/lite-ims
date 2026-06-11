@@ -1,5 +1,6 @@
 package io.github.sssuer77.liteims.vo;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -34,5 +35,6 @@ public class ProductVO {
     private Integer status; //状态
 
     @Schema(name = "createTime", title = "创建时间", description = "商品记录创建时间", readOnly = true, example = "2024-05-28 15:30:00")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "Asia/Shanghai")
     private LocalDateTime createTime; //创建时间
 }

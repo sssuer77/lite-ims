@@ -12,6 +12,16 @@ import org.apache.ibatis.annotations.Param;
 @Mapper
 public interface ProductMapper extends BaseMapper<Product> {
 
+    /**
+     * 分页查询商品列表（包含分类名称）
+     * @param page 分页参数
+     * @param name 商品名称 (可选)
+     * @param categoryId 分类ID (可选)
+     * @return 分页结果
+     */
+    IPage<ProductVO> selectProductList(Page<ProductVO> page,
+                                       @Param("name") String name,
+                                       @Param("categoryId") Long categoryId);
 
-    IPage<ProductVO> findPage(IPage<ProductVO> page, String name, Long categoryId);
+
 }

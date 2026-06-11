@@ -15,10 +15,11 @@ import org.springframework.stereotype.Service;
 public class ProductServiceImpl extends ServiceImpl<ProductMapper, Product> implements ProductService {
 
     @Autowired
-    ProductMapper productMapper;
+    private ProductMapper productMapper;
 
     @Override
-    public IPage<ProductVO> findPage(Integer page, Integer size, String name, Long categoryId) {
-        return productMapper.findPage(new Page<>(page, size),name,categoryId);
+    public IPage<ProductVO> getProductList(Page<ProductVO> page, String name, Long categoryId) {
+        // 直接调用 Mapper 自定义方法
+        return productMapper.selectProductList(page, name, categoryId);
     }
 }
