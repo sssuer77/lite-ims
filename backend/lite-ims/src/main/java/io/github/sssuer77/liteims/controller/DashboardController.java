@@ -23,4 +23,5 @@ public class DashboardController {
         // 调用 Service 层方法
         return Result.success(dashboardService.getStats());
     }
+
 }
